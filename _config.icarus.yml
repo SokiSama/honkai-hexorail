@@ -190,7 +190,7 @@ widgets:
         # Email address for the Gravatar
        # gravatar:
         # URL or path for the follow button
-        follow_link: 'https://space.bilibili.com/4750943'
+        follow_link: 'https://www.matsusatou.top/'
         # Links to be shown on the bottom of the profile widget
         social_links:
               Github:
@@ -259,6 +259,10 @@ widgets:
         position: right
         type: twikoo_new
         env_id: https://twikoo.imaegoo.com
+    # Site stats widget configurations
+    -
+        position: right
+        type: site_stats
 # Plugin configurations
 plugins:
     # Enable page startup animations

@@ -119,9 +119,13 @@ body.night #universe {
 }
 body.night img,
 body.night video,
-body.night iframe,
 body.night .waifu,
 body.night .donate {
+  filter: brightness(0.8);
+  -webkit-filter: brightness(0.8);
+}
+body.night .card#comments iframe,
+body.night iframe[src*="giscus.app"] {
   filter: brightness(0.8);
   -webkit-filter: brightness(0.8);
 }
@@ -516,9 +520,13 @@ body.night .third-party-link-dialog {
   }
   body:not(.light) img,
   body:not(.light) video,
-  body:not(.light) iframe,
   body:not(.light) .waifu,
   body:not(.light) .donate {
+    filter: brightness(0.8);
+    -webkit-filter: brightness(0.8);
+  }
+  body:not(.light) .card#comments iframe,
+  body:not(.light) iframe[src*="giscus.app"] {
     filter: brightness(0.8);
     -webkit-filter: brightness(0.8);
   }

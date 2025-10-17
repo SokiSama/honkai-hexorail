@@ -5,6 +5,7 @@
    */ 
   var isNight = localStorage.getItem('night');
   var nightNav;
+  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
   function applyNight(value) {
       if (value.toString() === 'true') {
@@ -14,6 +15,12 @@
           document.body.classList.remove('night');
           document.body.classList.add('light');
       }
+  }
+
+  // 当无用户手动偏好时，跟随系统主题（不设置任何 class，交由 CSS @media 控制）
+  function applyAuto() {
+      document.body.classList.remove('night');
+      document.body.classList.remove('light');
   }
 
   function findNightNav() {
@@ -32,5 +39,17 @@
   }
 
   findNightNav();
-  isNight && applyNight(isNight);
+  // 如果未设置手动偏好，则跟随系统；否则应用手动偏好
+  if (isNight === null) {
+      applyAuto();
+  } else {
+      applyNight(isNight);
+  }
+
+  // 系统主题变化时，只有在未设置手动偏好时才跟随变化
+  prefersDark.addEventListener('change', function() {
+      if (localStorage.getItem('night') === null) {
+          applyAuto();
+      }
+  });
 }());
