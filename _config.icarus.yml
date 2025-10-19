@@ -4,12 +4,12 @@ version: 5.1.0
 variant: default
 # Path or URL to the website's logo
 logo:
-    light: /images/logo.png
-    dark: /images/logo-dark.png
+    light: /img/logo.svg
+    dark: /img/logo.svg
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /favicon.ico
+    favicon: /img/favicon.svg
     # Canonical URL of the current page
     #canonical_url:
     # Open Graph metadata
@@ -81,7 +81,6 @@ navbar:
         回忆: /archives/
         分类: /categories/
         标签: /tags/
-        留言板: /messages/
         友情链接: /friends/
         关于: /about/
     # Links to be shown on the right of the navigation bar
@@ -124,7 +123,7 @@ article:
             url: 'https://creativecommons.org/'
         'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/deed.zh'
     # og_image
-    og_image: /images/og_image.png
+    og_image: /img/og_image.png
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
@@ -253,12 +252,7 @@ widgets:
         position: right
         type: recent_posts
         limit: 5
-    # Twikoo new comment widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: twikoo_new
-        env_id: https://twikoo.imaegoo.com
+
     # Site stats widget configurations
     -
         position: right
@@ -284,9 +278,9 @@ plugins:
     gallery: true
     # Google Analytics plugin settings
     # https://analytics.google.com
-    google_analytics:
-        # Google Analytics tracking ID
-        tracking_id: G-RCCCLYKRH5
+    # google_analytics:
+    #     # 填写你的 GA Tracking ID（如 UA-XXXX-Y 或 G-XXXX）
+    #     tracking_id: 
     # Hotjar user feedback plugin
     # https://www.hotjar.com/
     hotjar:
@@ -313,7 +307,7 @@ plugins:
         # 弹出框在屏幕上的位置
         position: bottom-right
         # 你网站的Cookie协议的URL
-        policyLink: '/cookies/'
+        policyLink: 'https://www.cookiesandyou.com/'
 # CDN provider settings
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:

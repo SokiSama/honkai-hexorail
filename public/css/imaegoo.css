@@ -22,12 +22,12 @@ body:before {
   bottom: 0;
   left: 0;
   opacity: 0.3;
-  background: url("/img/cute.webp") repeat;
+  background: url("/img/136046620_p0.png") repeat;
 }
 .navbar {
-  background-color: rgba(255,255,255,0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255,255,255,0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 .navbar-main .navbar-menu {
   background-color: transparent;
@@ -64,11 +64,13 @@ body:before {
 }
 .card {
   overflow: visible;
-  transition: background-color 0.5s ease;
-  background-color: rgba(255,255,255,0.95);
+  transition: background-color 0.5s ease, backdrop-filter 0.3s ease;
+  background-color: rgba(255,255,255,0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 .card:hover {
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.7);
 }
 .card.card-transparent {
   background-color: transparent !important;
@@ -97,8 +99,8 @@ footer.footer {
   background-color: transparent;
 }
 .footer {
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   position: relative;
 }
 .footer:before {
@@ -108,7 +110,7 @@ footer.footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.65);
 }
 .footer-logo img {
   max-height: 2rem;
@@ -218,6 +220,13 @@ article .title:hover a {
   background: $white-bis;
   color: $black-ter;
 }
+.menu-list a:hover {
+  background-color: #5d93db;
+  color: #fff;
+}
+.menu-list a.is-active {
+  background-color: #71a1e0;
+}
 #weixin-search-logo {
   background-image: url("/images/weixin/blacklogo.png");
   background-size: contain;
@@ -289,6 +298,59 @@ article .title:hover a {
 }
 .third-party-link-btn-group .button.is-success {
   margin-left: 10px;
+}
+.skills-section {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.skills-section .skills-title {
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+.skills-section .skills-subtitle {
+  opacity: 0.75;
+  margin: 0 0 1rem;
+}
+.skills-section .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-auto-rows: 120px;
+  align-items: stretch;
+  gap: 1rem;
+}
+.skills-section .skill-card {
+  border-radius: 12px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-section .skill-card .card-content {
+  padding: 0.75rem;
+}
+.skills-section .skill-card .skill-name {
+  margin-top: 0.25rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+@media screen and (max-width: 1280px) {
+  .skills-section .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 1088px) {
+  .skills-section .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 769px) {
+  .skills-section .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @-moz-keyframes img-spin-bounce {
   0% {

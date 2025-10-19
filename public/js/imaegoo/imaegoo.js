@@ -92,7 +92,7 @@
     bannerEl.className = 'third-party-link-banner';
     var descEl = document.createElement('div');
     descEl.className = 'third-party-link-desc';
-    descEl.innerText = '您即将离开虹墨空间站，打开第三方页面： ' + href;
+    descEl.innerText = '您即将离开星铁小站，打开第三方页面： ' + href;
     var btnGroupEl = document.createElement('div');
     btnGroupEl.className = 'third-party-link-btn-group';
     var btnCancelEl = document.createElement('button');
@@ -102,7 +102,7 @@
       document.body.removeChild(maskEl);
     }, { once: true });
     var btnConfirmEl = document.createElement('button');
-    btnConfirmEl.innerText = '继续访问';
+    btnConfirmEl.innerText = '列车跃迁';
     btnConfirmEl.classList.add('button', 'is-success');
     btnConfirmEl.addEventListener('click', function () {
       document.body.removeChild(maskEl);
