@@ -1,6 +1,6 @@
 ---
 title: 拥抱Hexo
-date: 2025-10-16 22:26:12
+date: 2025-10-16 21:26:12
 tags: 随笔
 categories: Diary
 excerpt: 星铁小站的第一篇文章。
