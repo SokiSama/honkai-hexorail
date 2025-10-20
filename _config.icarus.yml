@@ -98,7 +98,7 @@ footer:
         Attribution 4.0 International:
             icon: fab fa-creative-commons-by
             url: 'https://creativecommons.org/licenses/by/4.0/deed.zh'
-    copyright: '<a href="https://beian.mps.gov.cn/#/query/webSearch?code=41010502005985" rel="noreferrer" target="_blank">豫公网安备41010502005985</a>&nbsp;&nbsp;<a href="https://beian.miit.gov.cn" target="_blank" rel="noreferrer noopener">豫ICP备18017229号</a>'
+    copyright: ''
 # Article related configurations
 article:
     # Code highlight settings
@@ -272,13 +272,13 @@ plugins:
         tracking_id: # 4d5b97d11341c6f57b58fc622dc1ac38
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: true
+    busuanzi: false
     # Enable the lightGallery and Justified Gallery plugins
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/gallery-plugin/
-    gallery: true
+    gallery: false
     # Google Analytics plugin settings
     # https://analytics.google.com
-    # google_analytics:
+    #  google_analytics: 
     #     # 填写你的 GA Tracking ID（如 UA-XXXX-Y 或 G-XXXX）
     #     tracking_id: 
     # Hotjar user feedback plugin
