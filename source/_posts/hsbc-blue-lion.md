@@ -1,6 +1,6 @@
 ---
 title: 把 HSBC 蓝狮子绑上了
-date: 2025-10-16 21:26:12
+date: 2025-10-22 14:55:12
 tags: 随笔
 categories: Diary
 excerpt: 做了一件拖了很久的事情。
